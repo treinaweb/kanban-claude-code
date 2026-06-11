@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -34,7 +35,25 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               </div>
               <div className="flex items-center gap-2">
                 <ThemeToggle />
-                {user && <UserMenu email={user.email ?? ""} />}
+                {user ? (
+                  <UserMenu email={user.email ?? ""} />
+                ) : (
+                  <Link
+                    href="/login"
+                    className="transition-all active:scale-90"
+                    style={{
+                      background: "var(--primary)",
+                      color: "var(--on-primary)",
+                      fontSize: "14px",
+                      fontWeight: 500,
+                      borderRadius: "9999px",
+                      padding: "6px 16px",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Entrar
+                  </Link>
+                )}
               </div>
             </div>
           </header>
