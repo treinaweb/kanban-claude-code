@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: #ffffff;
+  --canvas-soft: #f6f5f4;
+  --surface: #ffffff;
+  --hairline: #e6e6e6;
+  --input-border: #dddddd;
+
+  --ink: #000000;
+  --ink-secondary: #31302e;
+  --ink-muted: #615d59;
+  --ink-faint: #a39e98;
+
+  --primary: #0075de;
+  --primary-active: #005bab;
+  --on-primary: #ffffff;
+  --secondary: #213183;
+
+  --overlay-soft: rgba(0, 0, 0, 0.05);
+
+  --badge-todo-bg: #f6f5f4;
+  --badge-todo-fg: #615d59;
+  --badge-doing-bg: #dbeafe;
+  --badge-doing-fg: #1d4ed8;
+  --badge-done-bg: #dcfce7;
+  --badge-done-fg: #15803d;
+
+  --danger: #dc2626;
+  --danger-bg: #fee2e2;
+  --danger-border: #fecaca;
+
+  --success: #1aae39;
+  --success-bg: #f0fdf4;
+  --success-border: #bbf7d0;
+}
+
+.dark {
+  --canvas: #262626;
+  --canvas-soft: #191919;
+  --surface: #262626;
+  --hairline: #333333;
+  --input-border: #3a3a3a;
+
+  --ink: #ededed;
+  --ink-secondary: #c4c4c4;
+  --ink-muted: #9b9b9b;
+  --ink-faint: #6f6f6f;
+
+  --primary: #3b9eff;
+  --primary-active: #2b86e8;
+  --on-primary: #ffffff;
+  --secondary: #1b2566;
+
+  --overlay-soft: rgba(255, 255, 255, 0.08);
+
+  --badge-todo-bg: #2f2f2f;
+  --badge-todo-fg: #9b9b9b;
+  --badge-doing-bg: rgba(59, 130, 246, 0.16);
+  --badge-doing-fg: #93c5fd;
+  --badge-done-bg: rgba(34, 197, 94, 0.16);
+  --badge-done-fg: #86efac;
+
+  --danger: #f87171;
+  --danger-bg: rgba(239, 68, 68, 0.16);
+  --danger-border: rgba(239, 68, 68, 0.3);
+
+  --success: #86efac;
+  --success-bg: rgba(34, 197, 94, 0.12);
+  --success-border: rgba(34, 197, 94, 0.3);
+}
